@@ -94,7 +94,7 @@ var roomstuff = {
 "rName": "The Cathedral Throne",
 
 "backgroundImage":
-"https://YOURIMAGEHERE.com/cathedralbg.png",
+"https://soi-ebonveil.hyperchat.com/catheralthrone.png",
 
 "roomtop":
 
@@ -146,7 +146,7 @@ var roomstuff = {
 "rName": "The Obsidian Library",
 
 "backgroundImage":
-"https://YOURIMAGEHERE.com/obsidianlibrarybg.png",
+"https://soi-ebonveil.hyperchat.com/ObsidianLibrarytrimmed.png",
 
 "roomtop":
 
@@ -198,7 +198,7 @@ var roomstuff = {
 "rName": "The Blood River",
 
 "backgroundImage":
-"https://YOURIMAGEHERE.com/bloodriverbg.png",
+"https://soi-ebonveil.hyperchat.com/bloodrivertrimmed.png",
 
 "roomtop":
 
