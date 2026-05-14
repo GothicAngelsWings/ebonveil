@@ -1,33 +1,100 @@
+/* =========================================
+   EBONVEIL CONFIG
+========================================= */
+
 var multiConfig = {
+
   "THISROOM": "ebonveil",
+
   "locationColor": "#6b0000",
+
   "locationBackground": "#000000",
+
   "currentView": "",
 
+  "defaultView": "cathedralthrone",
+
   "viewList": [
+
+    /* ======================
+       ROYAL DISTRICT
+    ====================== */
+
     "cathedralthrone",
+    "eternalcourt",
+    "midnightsanctum",
+
+    /* ======================
+       CIVIL DISTRICT
+    ====================== */
+
     "veilplaza",
     "bloodmoontavern",
     "velvetcrescent",
+
+    /* ======================
+       KNOWLEDGE DISTRICT
+    ====================== */
+
+    "obsidianlibrary",
+    "bloodarchive",
+    "sealedwing",
+
+    /* ======================
+       UNDERCITY
+    ====================== */
+
+    "bloodriver",
+    "smugglertunnels",
+    "bonegallery",
+    "ancestralpit",
+
+    /* ======================
+       SHADOW DISTRICT
+    ====================== */
+
+    "ravenpost",
+    "veiledcovenant",
+    "visioningpools",
+
+    /* ======================
+       OUTER REALM
+    ====================== */
+
+    "ashengate",
+    "hollowexpanse",
+
+    /* ======================
+       WILDERNESS
+    ====================== */
+
     "veilwood",
     "mourningcrypts"
-  ],
 
-  "defaultView": "cathedralthrone"
+  ]
+
 };
 
-/* =========================
-   ROOM DATA
-========================= */
 
-var roomstuff = {"rooms": {
+/* =========================================
+   ROOM DATABASE
+========================================= */
+
+var roomstuff = {
+
+"rooms": {
+
+
+/* =========================================
+   ROYAL DISTRICT
+========================================= */
 
 "cathedralthrone": {
 
 "rName": "The Cathedral Throne",
 
 "backgroundImage":
-"https://YOURIMAGEHERE.com/cathedralback.png",
+"https://YOURIMAGEHERE.com/cathedralbg.png",
 
 "roomtop":
 
@@ -37,13 +104,13 @@ var roomstuff = {"rooms": {
 
 "<img src='https://YOURIMAGEHERE.com/cathedralroom.png' style='width:100%; display:block;'>" +
 
-"<a href='?view=veilplaza' " +
-"style='position:absolute; top:75%; left:40%; width:20%; height:20%; cursor:pointer;' " +
-"title='Descend to Veil Plaza'></a>" +
+"<a href='?view=eternalcourt' " +
+"style='position:absolute; top:72%; left:42%; width:18%; height:18%; cursor:pointer;' " +
+"title='Enter The Eternal Court'></a>" +
 
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; letter-spacing:1px; border-top:1px solid #222;'>" +
+"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8;'>" +
 
-"The eternal seat of Queen Nyxara Velmourn. Moonlight spills through towering stained glass windows while the silence of immortality lingers in the air." +
+"The eternal seat of Queen Nyxara Velmourn." +
 
 "</div>" +
 
@@ -53,7 +120,7 @@ var roomstuff = {"rooms": {
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<div style='text-align:center; color:#777;'>" +
 
 "<span style='border:1px solid #4a0000; padding:5px 15px; font-size:10px;'>" +
 
@@ -67,6 +134,113 @@ var roomstuff = {"rooms": {
 "color":"#b8b8b8",
 "link":"#7a0000"
 
+},
+
+
+/* =========================================
+   KNOWLEDGE DISTRICT
+========================================= */
+
+"obsidianlibrary": {
+
+"rName": "The Obsidian Library",
+
+"backgroundImage":
+"https://YOURIMAGEHERE.com/obsidianlibrarybg.png",
+
+"roomtop":
+
+"<center>" +
+
+"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:900px;'>" +
+
+"<img src='https://YOURIMAGEHERE.com/obsidianlibrary.png' style='width:100%; display:block;'>" +
+
+"<a href='?view=bloodarchive' " +
+"style='position:absolute; top:75%; left:70%; width:15%; height:15%; cursor:pointer;' " +
+"title='Enter The Blood Archive'></a>" +
+
+"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8;'>" +
+
+"Ancient knowledge sleeps beneath candlelit arches." +
+
+"</div>" +
+
+"</div>" +
+
+"</center>",
+
+"roombottom":
+
+"<div style='text-align:center; color:#777;'>" +
+
+"<span style='border:1px solid #4a0000; padding:5px 15px; font-size:10px;'>" +
+
+"[ KNOWLEDGE HAS A PRICE ]" +
+
+"</span>" +
+
+"</div>",
+
+"innerBGColor":"#050505",
+"color":"#b8b8b8",
+"link":"#7a0000"
+
+},
+
+
+/* =========================================
+   UNDERCITY
+========================================= */
+
+"bloodriver": {
+
+"rName": "The Blood River",
+
+"backgroundImage":
+"https://YOURIMAGEHERE.com/bloodriverbg.png",
+
+"roomtop":
+
+"<center>" +
+
+"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:900px;'>" +
+
+"<img src='https://YOURIMAGEHERE.com/bloodriver.png' style='width:100%; display:block;'>" +
+
+"<a href='?view=smugglertunnels' " +
+"style='position:absolute; top:65%; left:55%; width:20%; height:20%; cursor:pointer;' " +
+"title='Enter The Smuggler Tunnels'></a>" +
+
+"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8;'>" +
+
+"Crimson waters drift beneath the kingdom like living veins." +
+
+"</div>" +
+
+"</div>" +
+
+"</center>",
+
+"roombottom":
+
+"<div style='text-align:center; color:#777;'>" +
+
+"<span style='border:1px solid #4a0000; padding:5px 15px; font-size:10px;'>" +
+
+"[ THE RIVER REMEMBERS ]" +
+
+"</span>" +
+
+"</div>",
+
+"innerBGColor":"#050505",
+"color":"#b8b8b8",
+"link":"#7a0000"
+
 }
+
+
+/* CONTINUE ADDING ROOMS BELOW */
 
 }};
