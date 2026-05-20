@@ -1,79 +1,80 @@
 /* =========================================
-   EBONVEIL CONFIG
+   EBONVEIL MULTI-LOCATION CONFIG
 ========================================= */
 
 var multiConfig = {
 
-  "THISROOM": "ebonveil",
+"THISROOM":"ebonveil@soi",
 
-  "locationColor": "#6b0000",
+"locationColor":"#b8b8b8",
 
-  "locationBackground": "#000000",
+"locationBackground":"#000000",
 
-  "currentView": "",
+"currentView":"",
 
-  "defaultView": "cathedralthrone",
+"defaultView":"Cathedral Throne",
 
-  "viewList": [
+"viewList":[
 
-    /* ======================
-       ROYAL DISTRICT
-    ====================== */
+/* ======================
+   ROYAL DISTRICT
+====================== */
 
-    "cathedralthrone",
-    "eternalcourt",
-    "midnightsanctum",
+"Cathedral Throne",
+"Eternal Court",
+"Midnight Sanctum",
 
-    /* ======================
-       CIVIL DISTRICT
-    ====================== */
+/* ======================
+   CIVIL DISTRICT
+====================== */
 
-    "veilplaza",
-    "bloodmoontavern",
-    "velvetcrescent",
+"Veil Plaza",
+"Bloodmoon Tavern",
+"Velvet Crescent",
 
-    /* ======================
-       KNOWLEDGE DISTRICT
-    ====================== */
+/* ======================
+   KNOWLEDGE DISTRICT
+====================== */
 
-    "obsidianlibrary",
-    "bloodarchive",
-    "sealedwing",
+"Obsidian Library",
+"Blood Archive",
+"Sealed Wing",
 
-    /* ======================
-       UNDERCITY
-    ====================== */
+/* ======================
+   UNDERCITY
+====================== */
 
-    "bloodriver",
-    "smugglertunnels",
-    "bonegallery",
-    "ancestralpit",
+"Blood River",
+"Smuggler Tunnels",
+"Bone Gallery",
+"Ancestral Pit",
 
-    /* ======================
-       SHADOW DISTRICT
-    ====================== */
+/* ======================
+   SHADOW DISTRICT
+====================== */
 
-    "ravenpost",
-    "veiledcovenant",
-    "visioningpools",
+"Raven Post",
+"Veiled Covenant",
+"Visioning Pools",
 
-    /* ======================
-       OUTER REALM
-    ====================== */
+/* ======================
+   OUTER REALM
+====================== */
 
-    "ashengate",
-    "hollowexpanse",
+"Ashen Gate",
+"Hollow Expanse",
 
-    /* ======================
-       WILDERNESS
-    ====================== */
+/* ======================
+   WILDERNESS
+====================== */
 
-    "veilwood",
-    "mourningcrypts"
+"Veilwood",
+"Mourning Crypts"
 
-  ]
+]
 
 };
+
 
 
 /* =========================================
@@ -82,213 +83,221 @@ var multiConfig = {
 
 var roomstuff = {
 
-"rooms": {
+"rooms":{
 
 
 /* =========================================
    ROYAL DISTRICT
 ========================================= */
 
-"cathedralthrone": {
+"Cathedral Throne":{
 
-"rName": "The Cathedral Throne",
+"rName":"The Cathedral Throne",
 
 "backgroundImage":
-"https://soi-ebonveil.hyperchat.com/catheralthrone.png",
+"https://soi-ebonveil.hyperchat.com/catheralthroneback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #4a0000; background:rgba(0,0,0,0.75); width:90%;'>" +
+
+"<b>ROYAL DISTRICT</b><br><br>" +
+
+"✧ Cathedral Throne<br>" +
+"✧ Eternal Court<br>" +
+"✧ Midnight Sanctum" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px; line-height:1.8;'>" +
+
+"Moonlight spills across obsidian floors while whispers echo beneath cathedral arches." +
+
+"</div>" +
+
+"</center>",
 
 "roomtop":
 
 "<center>" +
 
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
+"<div style='position:relative; border:2px solid #4a0000; background:#000; overflow:hidden; max-width:1200px;'>" +
 
 "<img src='https://soi-ebonveil.hyperchat.com/catheralthrone.png' style='width:100%; display:block;'>" +
 
-/* ======================
-   NAVIGATION HOTSPOTS
-====================== */
-
-"<a href='?view=eternalcourt' " +
-"style='position:absolute; top:38%; left:8%; width:18%; height:35%; cursor:pointer;' " +
-"title='Enter The Eternal Court'></a>" +
-
-"<a href='?view=midnightsanctum' " +
-"style='position:absolute; top:20%; right:8%; width:18%; height:30%; cursor:pointer;' " +
-"title='Enter The Midnight Sanctum'></a>" +
-
-"<a href='?view=veilplaza' " +
-"style='position:absolute; bottom:8%; right:8%; width:20%; height:20%; cursor:pointer;' " +
-"title='Descend To Veil Plaza'></a>" +
-
-/* ======================
-   ROOM LORE TEXT
-====================== */
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; letter-spacing:1px; border-top:1px solid #220000; background:#050505;'>" +
-
-"The eternal seat of Queen Nyxara Velmourn. Moonlight spills through towering stained glass windows while the silence of immortality lingers beneath cathedral arches." +
-
-"</div>" +
-
 "</div>" +
 
 "</center>",
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<center>" +
 
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px; letter-spacing:2px; background:#0a0a0a;'>" +
+"<div style='padding:8px; font-size:10px; letter-spacing:2px;'>" +
 
 "[ THE CRIMSON THRONE WAITS ]" +
 
-"</span>" +
+"</div>" +
 
-"</div>",
+"</center>",
 
-"innerBGColor":"#050505",
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/royalborder.jpg",
+
+"innerBGColor":"#120000",
+
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/royalseparator.png",
+
 "color":"#b8b8b8",
-"link":"#7a0000"
+
+"link":"#8b0000",
+
+"hlink":"#c0c0c0",
+
+"selection":"#5c0a0a",
+
+"inputBorderColor_Default":"#8b0000",
+
+"inputBGColor_Default":"#000000",
+
+"inputTextColor_Default":"#b8b8b8"
 
 },
 
 
-"eternalcourt": {
 
-"rName": "The Eternal Court",
+"Eternal Court":{
+
+"rName":"The Eternal Court",
 
 "backgroundImage":
-"https://soi-ebonveil.hyperchat.com/eternalcourt.png",
+"https://soi-ebonveil.hyperchat.com/eternalcourtback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #3b0000; background:rgba(0,0,0,0.75); width:90%;'>" +
+
+"<b>ROYAL DISTRICT</b><br><br>" +
+
+"✧ Cathedral Throne<br>" +
+"✧ Eternal Court<br>" +
+"✧ Midnight Sanctum" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px;'>" +
+
+"The immortal bloodlines gather beneath candlelit balconies to shape the fate of Ebonveil." +
+
+"</div>" +
+
+"</center>",
 
 "roomtop":
 
 "<center>" +
 
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
+"<div style='position:relative; border:2px solid #3b0000; background:#000; overflow:hidden; max-width:1200px;'>" +
 
 "<img src='https://soi-ebonveil.hyperchat.com/eternalcourt.png' style='width:100%; display:block;'>" +
 
-"<a href='?view=cathedralthrone' " +
-"style='position:absolute; top:70%; left:5%; width:20%; height:20%; cursor:pointer;' " +
-"title='Return To The Cathedral Throne'></a>" +
-
-"<a href='?view=ravenpost' " +
-"style='position:absolute; top:20%; right:5%; width:18%; height:25%; cursor:pointer;' " +
-"title='Enter The Raven Post'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"The governing chamber of Ebonveil where ancient bloodlines shape the fate of the kingdom." +
-
-"</div>" +
-
 "</div>" +
 
 "</center>",
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<center><div>[ ALL SECRETS REACH THE COURT ]</div></center>",
 
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/royalborder.jpg",
 
-"[ ALL SECRETS REACH THE COURT ]" +
+"innerBGColor":"#150505",
 
-"</span>" +
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/royalseparator.png",
 
-"</div>",
+"color":"#d0d0d0",
 
-"innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+"link":"#7a0000",
 
-},
+"hlink":"#c0c0c0",
 
+"selection":"#5c0a0a",
 
-"midnightsanctum": {
+"inputBorderColor_Default":"#7a0000",
 
-"rName": "The Midnight Sanctum",
+"inputBGColor_Default":"#000000",
 
-"backgroundImage":
-"https://soi-ebonveil.hyperchat.com/midnightsanctum.png",
-
-"roomtop":
-
-"<center>" +
-
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
-
-"<img src='https://soi-ebonveil.hyperchat.com/midnightsanctum.png' style='width:100%; display:block;'>" +
-
-"<a href='?view=cathedralthrone' " +
-"style='position:absolute; bottom:10%; left:10%; width:20%; height:20%; cursor:pointer;' " +
-"title='Return To The Cathedral Throne'></a>" +
-
-"<a href='?view=visioningpools' " +
-"style='position:absolute; top:15%; right:15%; width:15%; height:25%; cursor:pointer;' " +
-"title='Enter The Visioning Pools'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"The private sanctuary of Queen Nyxara where prophecy, grief, and silence intertwine." +
-
-"</div>" +
-
-"</div>" +
-
-"</center>",
-
-"roombottom":
-
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
-
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
-
-"[ EVEN IMMORTALS MOURN ]" +
-
-"</span>" +
-
-"</div>",
-
-"innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+"inputTextColor_Default":"#d0d0d0"
 
 },
+
 
 
 /* =========================================
    KNOWLEDGE DISTRICT
 ========================================= */
 
-"obsidianlibrary": {
+"Obsidian Library":{
 
-"rName": "The Obsidian Library",
+"rName":"The Obsidian Library",
 
 "backgroundImage":
-"https://soi-ebonveil.hyperchat.com/ObsidianLibrarytrimmed.png",
+"https://soi-ebonveil.hyperchat.com/obsidianlibraryback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #3d2a12; background:rgba(0,0,0,0.75); width:90%;'>" +
+
+"<b>KNOWLEDGE DISTRICT</b><br><br>" +
+
+"✧ Obsidian Library<br>" +
+"✧ Blood Archive<br>" +
+"✧ Sealed Wing" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px; line-height:1.8;'>" +
+
+"Ancient knowledge slumbers beneath candlelit shelves and forgotten parchment." +
+
+"</div>" +
+
+"</center>",
 
 "roomtop":
 
 "<center>" +
 
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
+"<div style='position:relative; border:2px solid #3d2a12; background:#000; overflow:hidden; max-width:1200px;'>" +
 
 "<img src='https://soi-ebonveil.hyperchat.com/ObsidianLibrarytrimmed.png' style='width:100%; display:block;'>" +
-
-"<a href='?view=bloodarchive' " +
-"style='position:absolute; top:70%; right:10%; width:20%; height:20%; cursor:pointer;' " +
-"title='Enter The Blood Archive'></a>" +
-
-"<a href='?view=sealedwing' " +
-"style='position:absolute; top:15%; left:10%; width:15%; height:20%; cursor:pointer;' " +
-"title='Enter The Sealed Wing'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"Ancient knowledge sleeps beneath candlelit arches while forgotten truths whisper through endless shelves." +
-
-"</div>" +
 
 "</div>" +
 
@@ -296,55 +305,80 @@ var roomstuff = {
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<center><div>[ KNOWLEDGE HAS A PRICE ]</div></center>",
 
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/libraryborder.jpg",
 
-"[ KNOWLEDGE HAS A PRICE ]" +
+"innerBGColor":"#140d08",
 
-"</span>" +
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/libraryseparator.png",
 
-"</div>",
+"color":"#d8c8aa",
 
-"innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+"link":"#8a5a2a",
+
+"hlink":"#f0e0b8",
+
+"selection":"#5a2d14",
+
+"inputBorderColor_Default":"#8a5a2a",
+
+"inputBGColor_Default":"#000000",
+
+"inputTextColor_Default":"#d8c8aa"
 
 },
+
 
 
 /* =========================================
    UNDERCITY
 ========================================= */
 
-"bloodriver": {
+"Blood River":{
 
-"rName": "The Blood River",
+"rName":"The Blood River",
 
 "backgroundImage":
-"https://soi-ebonveil.hyperchat.com/bloodrivertrimmed.png",
+"https://soi-ebonveil.hyperchat.com/bloodriverback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #2a0000; background:rgba(0,0,0,0.85); width:90%;'>" +
+
+"<b>UNDERCITY</b><br><br>" +
+
+"✧ Blood River<br>" +
+"✧ Smuggler Tunnels<br>" +
+"✧ Bone Gallery" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px; line-height:1.8;'>" +
+
+"The crimson river winds beneath Ebonveil like an ancient living vein." +
+
+"</div>" +
+
+"</center>",
 
 "roomtop":
 
 "<center>" +
 
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
+"<div style='position:relative; border:2px solid #2a0000; background:#000; overflow:hidden; max-width:1200px;'>" +
 
 "<img src='https://soi-ebonveil.hyperchat.com/bloodrivertrimmed.png' style='width:100%; display:block;'>" +
-
-"<a href='?view=smugglertunnels' " +
-"style='position:absolute; top:65%; left:55%; width:20%; height:20%; cursor:pointer;' " +
-"title='Enter The Smuggler Tunnels'></a>" +
-
-"<a href='?view=bonegallery' " +
-"style='position:absolute; top:20%; right:10%; width:15%; height:25%; cursor:pointer;' " +
-"title='Enter The Bone Gallery'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"Crimson waters drift beneath the kingdom like living veins beneath ancient stone." +
-
-"</div>" +
 
 "</div>" +
 
@@ -352,19 +386,29 @@ var roomstuff = {
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<center><div>[ THE RIVER REMEMBERS ]</div></center>",
 
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
-
-"[ THE RIVER REMEMBERS ]" +
-
-"</span>" +
-
-"</div>",
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/undercityborder.jpg",
 
 "innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/undercityseparator.png",
+
+"color":"#b8a0a0",
+
+"link":"#6b0000",
+
+"hlink":"#d0d0d0",
+
+"selection":"#3b0000",
+
+"inputBorderColor_Default":"#6b0000",
+
+"inputBGColor_Default":"#000000",
+
+"inputTextColor_Default":"#b8a0a0"
 
 },
 
@@ -372,195 +416,205 @@ var roomstuff = {
    SHADOW DISTRICT
 ========================================= */
 
+"Raven Post":{
 
-"ravenpost": {
-
-"rName": "The Raven Post",
+"rName":"The Raven Post",
 
 "backgroundImage":
-"https://soi-ebonveil.hyperchat.com/ravenposttrimmed.png",
+"https://soi-ebonveil.hyperchat.com/ravenpostback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #2d2d38; background:rgba(0,0,0,0.78); width:90%;'>" +
+
+"<b>SHADOW DISTRICT</b><br><br>" +
+
+"✧ Raven Post<br>" +
+"✧ Veiled Covenant<br>" +
+"✧ Visioning Pools" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px; line-height:1.8;'>" +
+
+"Whispers move through hidden corridors while ravens carry secrets across the kingdom." +
+
+"</div>" +
+
+"</center>",
 
 "roomtop":
 
 "<center>" +
 
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
+"<div style='position:relative; border:2px solid #3a3a48; background:#000; overflow:hidden; max-width:1200px;'>" +
 
 "<img src='https://soi-ebonveil.hyperchat.com/ravenpost.png' style='width:100%; display:block;'>" +
 
-"<a href='?view=eternalcourt' " +
-"style='position:absolute; top:15%; left:10%; width:20%; height:25%; cursor:pointer;' " +
-"title='Return To The Eternal Court'></a>" +
-
-"<a href='?view=veiledcovenant' " +
-"style='position:absolute; top:60%; right:10%; width:18%; height:25%; cursor:pointer;' " +
-"title='Enter The Veiled Covenant'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"Whispers, secrets, and shadowed messages move silently through the hidden arteries of Ebonveil." +
-
-"</div>" +
-
 "</div>" +
 
 "</center>",
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<center><div>[ THE RAVENS SEE ALL ]</div></center>",
 
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/shadowborder.jpg",
 
-"[ THE RAVENS SEE ALL ]" +
+"innerBGColor":"#0d0d14",
 
-"</span>" +
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/shadowseparator.png",
 
-"</div>",
+"color":"#c2c2d8",
 
-"innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+"link":"#8080a0",
+
+"hlink":"#d8d8ff",
+
+"selection":"#404060",
+
+"inputBorderColor_Default":"#606080",
+
+"inputBGColor_Default":"#000000",
+
+"inputTextColor_Default":"#c2c2d8"
 
 },
 
 
-"veiledcovenant": {
 
-"rName": "The Veiled Covenant",
+"Veiled Covenant":{
+
+"rName":"The Veiled Covenant",
 
 "backgroundImage":
-"https://soi-ebonveil.hyperchat.com/veiledcovenant.png",
+"https://soi-ebonveil.hyperchat.com/veiledcovenantback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #444455; background:rgba(0,0,0,0.82); width:90%;'>" +
+
+"<b>SHADOW DISTRICT</b><br><br>" +
+
+"✧ Raven Post<br>" +
+"✧ Veiled Covenant<br>" +
+"✧ Visioning Pools" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px;'>" +
+
+"The hidden order guards prophecy, blood rituals, and forbidden truths." +
+
+"</div>" +
+
+"</center>",
 
 "roomtop":
 
 "<center>" +
 
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
+"<div style='position:relative; border:2px solid #50506a; background:#000; overflow:hidden; max-width:1200px;'>" +
 
 "<img src='https://soi-ebonveil.hyperchat.com/veiledcovenant.png' style='width:100%; display:block;'>" +
 
-"<a href='?view=visioningpools' " +
-"style='position:absolute; top:20%; right:10%; width:15%; height:25%; cursor:pointer;' " +
-"title='Enter The Visioning Pools'></a>" +
-
-"<a href='?view=ravenpost' " +
-"style='position:absolute; bottom:10%; left:10%; width:18%; height:18%; cursor:pointer;' " +
-"title='Return To The Raven Post'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"The hidden order guarding prophecy, forbidden rituals, and the ancient balance beneath Ebonveil." +
-
-"</div>" +
-
 "</div>" +
 
 "</center>",
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<center><div>[ THE COVENANT NEVER SLEEPS ]</div></center>",
 
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/shadowborder.jpg",
 
-"[ THE COVENANT NEVER SLEEPS ]" +
+"innerBGColor":"#12121c",
 
-"</span>" +
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/shadowseparator.png",
 
-"</div>",
+"color":"#d0d0e0",
 
-"innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+"link":"#9090b0",
 
-},
+"hlink":"#ffffff",
 
+"selection":"#50506a",
 
-"visioningpools": {
+"inputBorderColor_Default":"#707090",
 
-"rName": "The Visioning Pools",
+"inputBGColor_Default":"#000000",
 
-"backgroundImage":
-"https://soi-ebonveil.hyperchat.com/Visioningpoolstrimmed.png",
-
-"roomtop":
-
-"<center>" +
-
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
-
-"<img src='https://soi-ebonveil.hyperchat.com/visioningpools.png' style='width:100%; display:block;'>" +
-
-"<a href='?view=midnightsanctum' " +
-"style='position:absolute; top:15%; left:8%; width:18%; height:25%; cursor:pointer;' " +
-"title='Return To The Midnight Sanctum'></a>" +
-
-"<a href='?view=veiledcovenant' " +
-"style='position:absolute; bottom:10%; right:10%; width:20%; height:18%; cursor:pointer;' " +
-"title='Return To The Veiled Covenant'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"Black mirrored waters reveal visions of futures few immortals survive witnessing." +
-
-"</div>" +
-
-"</div>" +
-
-"</center>",
-
-"roombottom":
-
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
-
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
-
-"[ THE WATER REMEMBERS ALL THINGS ]" +
-
-"</span>" +
-
-"</div>",
-
-"innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+"inputTextColor_Default":"#d0d0e0"
 
 },
+
 
 
 /* =========================================
    OUTER REALM
 ========================================= */
 
-"ashengate": {
+"Ashen Gate":{
 
-"rName": "The Ashen Gate",
+"rName":"The Ashen Gate",
 
 "backgroundImage":
-"https://soi-ebonveil.hyperchat.com/AshenGatetrimmed.png",
+"https://soi-ebonveil.hyperchat.com/ashengateback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #4a4a4a; background:rgba(0,0,0,0.8); width:90%;'>" +
+
+"<b>OUTER REALM</b><br><br>" +
+
+"✧ Ashen Gate<br>" +
+"✧ Hollow Expanse" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px; line-height:1.8;'>" +
+
+"The final wall of Ebonveil stands against the cursed darkness beyond." +
+
+"</div>" +
+
+"</center>",
 
 "roomtop":
 
 "<center>" +
 
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
+"<div style='position:relative; border:2px solid #5a5a5a; background:#000; overflow:hidden; max-width:1200px;'>" +
 
 "<img src='https://soi-ebonveil.hyperchat.com/ashengate.png' style='width:100%; display:block;'>" +
-
-"<a href='?view=hollowexpanse' " +
-"style='position:absolute; top:30%; left:40%; width:20%; height:40%; cursor:pointer;' " +
-"title='Venture Into The Hollow Expanse'></a>" +
-
-"<a href='?view=veilplaza' " +
-"style='position:absolute; bottom:10%; left:10%; width:18%; height:18%; cursor:pointer;' " +
-"title='Return To Veil Plaza'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"The last great wall protecting Ebonveil from the cursed darkness beyond." +
-
-"</div>" +
 
 "</div>" +
 
@@ -568,47 +622,75 @@ var roomstuff = {
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<center><div>[ THE WATCH ENDURES ]</div></center>",
 
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/ashenborder.jpg",
 
-"[ THE WATCH ENDURES ]" +
+"innerBGColor":"#111111",
 
-"</span>" +
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/ashenseparator.png",
 
-"</div>",
+"color":"#c8c8c8",
 
-"innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+"link":"#808080",
+
+"hlink":"#f0f0f0",
+
+"selection":"#5a5a5a",
+
+"inputBorderColor_Default":"#707070",
+
+"inputBGColor_Default":"#000000",
+
+"inputTextColor_Default":"#c8c8c8"
 
 },
 
 
-"hollowexpanse": {
 
-"rName": "The Hollow Expanse",
+"Hollow Expanse":{
+
+"rName":"The Hollow Expanse",
 
 "backgroundImage":
-"https://soi-ebonveil.hyperchat.com/Hollowexpansetrimmed.png",
+"https://soi-ebonveil.hyperchat.com/hollowexpanseback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #666666; background:rgba(0,0,0,0.85); width:90%;'>" +
+
+"<b>OUTER REALM</b><br><br>" +
+
+"✧ Ashen Gate<br>" +
+"✧ Hollow Expanse" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px;'>" +
+
+"A dead wasteland of ruins, curses, and forgotten horrors buried beneath endless ash." +
+
+"</div>" +
+
+"</center>",
 
 "roomtop":
 
 "<center>" +
 
-"<div style='position:relative; border:1px solid #4a0000; overflow:hidden; background:#000; max-width:1200px; box-shadow:0px 0px 25px #000;'>" +
+"<div style='position:relative; border:2px solid #707070; background:#000; overflow:hidden; max-width:1200px;'>" +
 
 "<img src='https://soi-ebonveil.hyperchat.com/hollowexpanse.png' style='width:100%; display:block;'>" +
-
-"<a href='?view=ashengate' " +
-"style='position:absolute; bottom:10%; left:10%; width:20%; height:20%; cursor:pointer;' " +
-"title='Return To The Ashen Gate'></a>" +
-
-"<div style='padding:20px; color:#b8b8b8; font-size:13px; line-height:1.8; background:#050505;'>" +
-
-"A dead world of ruins, curses, forgotten wars, and ancient horrors buried beneath endless ash." +
-
-"</div>" +
 
 "</div>" +
 
@@ -616,21 +698,187 @@ var roomstuff = {
 
 "roombottom":
 
-"<div style='text-align:center; color:#777; margin-top:15px;'>" +
+"<center><div>[ OUTSIDE THE LIGHT, ONLY DARKNESS REMAINS ]</div></center>",
 
-"<span style='border:1px solid #4a0000; padding:6px 18px; font-size:10px;'>" +
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/hollowborder.jpg",
 
-"[ OUTSIDE THE LIGHT, ONLY DARKNESS REMAINS ]" +
+"innerBGColor":"#080808",
 
-"</span>" +
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/hollowseparator.png",
 
-"</div>",
+"color":"#aaaaaa",
 
-"innerBGColor":"#050505",
-"color":"#b8b8b8",
-"link":"#7a0000"
+"link":"#777777",
+
+"hlink":"#dddddd",
+
+"selection":"#555555",
+
+"inputBorderColor_Default":"#666666",
+
+"inputBGColor_Default":"#000000",
+
+"inputTextColor_Default":"#aaaaaa"
+
+},
+
+
+/* =========================================
+   WILDERNESS
+========================================= */
+
+"Veilwood":{
+
+"rName":"Veilwood",
+
+"backgroundImage":
+"https://soi-ebonveil.hyperchat.com/veilwoodback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #1f3a1f; background:rgba(0,0,0,0.8); width:90%;'>" +
+
+"<b>WILDERNESS</b><br><br>" +
+
+"✧ Veilwood<br>" +
+"✧ Mourning Crypts" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px;'>" +
+
+"The ancient forest breathes with old magic beneath silver moonlight." +
+
+"</div>" +
+
+"</center>",
+
+"roomtop":
+
+"<center>" +
+
+"<div style='position:relative; border:2px solid #305030; background:#000; overflow:hidden; max-width:1200px;'>" +
+
+"<img src='https://soi-ebonveil.hyperchat.com/veilwood.png' style='width:100%; display:block;'>" +
+
+"</div>" +
+
+"</center>",
+
+"roombottom":
+
+"<center><div>[ THE FOREST NEVER SLEEPS ]</div></center>",
+
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/veilwoodborder.jpg",
+
+"innerBGColor":"#081008",
+
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/forestseparator.png",
+
+"color":"#b8d0b8",
+
+"link":"#4a7a4a",
+
+"hlink":"#d8ffd8",
+
+"selection":"#305030",
+
+"inputBorderColor_Default":"#4a7a4a",
+
+"inputBGColor_Default":"#000000",
+
+"inputTextColor_Default":"#b8d0b8"
+
+},
+
+
+
+"Mourning Crypts":{
+
+"rName":"The Mourning Crypts",
+
+"backgroundImage":
+"https://soi-ebonveil.hyperchat.com/mourningcryptsback.png",
+
+"chatleft":
+
+"<center>" +
+
+"<div style='padding:8px; border:1px solid #444444; background:rgba(0,0,0,0.82); width:90%;'>" +
+
+"<b>WILDERNESS</b><br><br>" +
+
+"✧ Veilwood<br>" +
+"✧ Mourning Crypts" +
+
+"</div>" +
+
+"</center>",
+
+"underchat":
+
+"<center>" +
+
+"<div style='padding:10px; max-width:700px; font-size:11px; line-height:1.8;'>" +
+
+"Ancient graves and forgotten bloodlines slumber beneath cracked stone and dying roses." +
+
+"</div>" +
+
+"</center>",
+
+"roomtop":
+
+"<center>" +
+
+"<div style='position:relative; border:2px solid #555555; background:#000; overflow:hidden; max-width:1200px;'>" +
+
+"<img src='https://soi-ebonveil.hyperchat.com/mourningcrypts.png' style='width:100%; display:block;'>" +
+
+"</div>" +
+
+"</center>",
+
+"roombottom":
+
+"<center><div>[ EVEN THE DEAD WHISPER HERE ]</div></center>",
+
+"borderBGImage":
+"https://soi-ebonveil.hyperchat.com/cryptborder.jpg",
+
+"innerBGColor":"#0a0a0a",
+
+"innerHRImage":
+"https://soi-ebonveil.hyperchat.com/cryptseparator.png",
+
+"color":"#c0c0c0",
+
+"link":"#888888",
+
+"hlink":"#ffffff",
+
+"selection":"#555555",
+
+"inputBorderColor_Default":"#666666",
+
+"inputBGColor_Default":"#000000",
+
+"inputTextColor_Default":"#c0c0c0"
 
 }
+
 
 
 /* =========================================
